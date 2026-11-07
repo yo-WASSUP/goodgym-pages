@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodGYM - Privacy Policy / 隐私政策</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .brand {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 0;
+        }
+        .brand h1 {
+            font-size: 28px;
+            font-weight: 900;
+        }
+        .brand .good { color: #fff; }
+        .brand .gym { color: #CCFF00; }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .lang-switch a {
+            color: #CCFF00;
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 6px 16px;
+            border: 1px solid #333;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .lang-switch a.active {
+            background: #CCFF00;
+            color: #000;
+            border-color: #CCFF00;
+        }
+        .section { display: none; }
+        .section.active { display: block; }
+        h2 {
+            color: #CCFF00;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 28px 0 12px;
+        }
+        p { margin-bottom: 12px; color: #bbb; font-size: 15px; }
+        ul { margin: 0 0 12px 20px; color: #bbb; font-size: 15px; }
+        li { margin-bottom: 6px; }
+        .date { color: #666; font-size: 13px; text-align: center; margin-top: 40px; }
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding: 24px 0;
+            border-top: 1px solid #1a1a1a;
+            color: #444;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="brand">
+    <h1><span class="good">Good</span><span class="gym">GYM</span></h1>
+</div>
+
+<div class="lang-switch">
+    <a href="#" id="btn-zh" class="active" onclick="switchLang('zh')">简体中文</a>
+    <a href="#" id="btn-en" onclick="switchLang('en')">English</a>
+</div>
+
+<!-- 中文版本 -->
+<div id="section-zh" class="section active">
+    <h2>隐私政策</h2>
+    <p>GoodGYM 非常重视您的隐私。本隐私政策说明了我们如何处理您的信息。</p>
+
+    <h2>数据收集</h2>
+    <p>GoodGYM 不会将您的个人或健康数据收集到开发者服务器，也不会出售或用于广告。具体来说：</p>
+    <ul>
+        <li>我们不收集您的姓名、邮箱、电话号码或任何个人身份信息</li>
+        <li>我们不使用广告 SDK，也不会自行分析或跟踪您的使用行为</li>
+        <li>除下文“第三方 SDK：Google ML Kit”所述的信息外，您的数据不会提供给任何第三方</li>
+    </ul>
+
+    <h2>第三方 SDK：Google ML Kit</h2>
+    <p>GoodGYM 使用 Google ML Kit 在设备本地进行姿态检测。根据 <a href="https://developers.google.com/ml-kit/ios-data-disclosure" style="color:#CCFF00">Google 的说明</a>，ML Kit 默认会收集设备信息、应用信息、单次安装标识符、性能指标、API 配置、事件类型和错误代码，用于诊断和使用分析。设备联网时，应用可能会连接 Google 服务器（例如 play.googleapis.com）。开发者不会收到这些信息。您可以断开网络使用训练功能，此时不会发生这类连接。</p>
+
+    <h2>Apple Health</h2>
+    <p>在您主动授权并开启自动同步后，GoodGYM 可以将已完成训练的运动类型、开始时间、结束时间和时长写入 Apple Health。GoodGYM 不读取身体数据，也不写入估算卡路里。训练数据仅通过 Apple 提供的 HealthKit 在您的设备上处理，不会上传到 GoodGYM 服务器。您可以随时在系统设置或 Apple Health 中更改权限。</p>
+
+    <h2>摄像头使用</h2>
+    <p>GoodGYM 使用设备摄像头进行实时姿态检测，以计算您的运动次数。</p>
+    <ul>
+        <li>摄像头画面在设备本地实时处理，<strong>GoodGYM 不会上传</strong>；除非您主动开始训练录像，否则不会录制或保存</li>
+        <li>姿态检测在设备端通过 Google ML Kit 完成，无需网络连接</li>
+        <li>关闭应用后，摄像头立即停止工作</li>
+    </ul>
+
+    <h2>面部数据</h2>
+    <p>GoodGYM 不收集、存储、传输或共享任何面部数据。应用可能会根据设备端姿态检测结果在实时预览画面中显示面部遮挡模板，但该遮挡仅用于本地界面显示，不会识别身份、不会保存面部图像，也不会创建或保留任何面部数据。</p>
+
+    <h2>数据存储与 iCloud 同步</h2>
+    <p>以下数据保存在您的设备上：</p>
+    <ul>
+        <li>训练历史记录（每日完成的动作次数和计时时长）</li>
+        <li>训练目标设置</li>
+        <li>自定义动作</li>
+        <li>小游戏成绩</li>
+        <li>Apple Health 自动同步偏好和已同步状态</li>
+        <li>语言、声音和外观偏好设置</li>
+        <li>您选择保存的训练录像</li>
+    </ul>
+    <p>如果您的设备已登录 iCloud，GoodGYM 会通过 Apple 的 CloudKit，把训练历史、训练目标、自定义动作和小游戏成绩同步到<strong>您本人 iCloud 账户的私有数据库</strong>，让数据在重装应用或更换设备后仍然保留，并在您的多台设备之间保持一致。这些数据由 Apple 按照其隐私政策保管，只有您本人可以访问，开发者无法查看。偏好设置和训练录像不会同步，只保存在本机。</p>
+    <p>您可以在系统"设置 → [您的姓名] → iCloud"中关闭 GoodGYM 的 iCloud 访问，也可以在同一位置的"管理储存空间"中删除 GoodGYM 在 iCloud 中的数据。卸载应用会删除本机数据；如需同时删除 iCloud 中的副本，请按上述方式操作。</p>
+
+    <h2>购买与订阅</h2>
+    <p>Pro 会员（月度、年度订阅或永久购买）通过 Apple App Store 完成。付款、续订和退款均由 Apple 处理，GoodGYM 无法获取您的付款信息，只会从 Apple 获取您当前是否拥有有效会员。您可以在 App Store 账户设置中管理或取消订阅。</p>
+
+    <h2>网络访问</h2>
+    <p>GoodGYM 的训练和动作识别<strong>无需网络连接</strong>即可使用，应用也不会连接任何开发者服务器。设备联网时，应用可能产生以下连接：</p>
+    <ul>
+        <li>通过 Apple 的系统服务进行 iCloud 同步和 App Store 购买</li>
+        <li>Google ML Kit 连接 Google 服务器，详见上文“第三方 SDK：Google ML Kit”</li>
+        <li>您点击外部链接时，由系统打开相应网页</li>
+    </ul>
+
+    <h2>儿童隐私</h2>
+    <p>GoodGYM 不针对 13 岁以下的儿童，也不会有意收集儿童的任何信息。</p>
+
+    <h2>隐私政策更新</h2>
+    <p>如果我们更新隐私政策，会在此页面发布更新内容。建议您定期查看本页面。</p>
+
+    <h2>联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问，请通过小红书联系我们。</p>
+
+    <p class="date">更新日期：2026 年 11 月 7 日</p>
+</div>
+
+<!-- English Version -->
+<div id="section-en" class="section">
+    <h2>Privacy Policy</h2>
+    <p>GoodGYM takes your privacy seriously. This privacy policy explains how we handle your information.</p>
+
+    <h2>Data Collection</h2>
+    <p>GoodGYM does not collect personal or health data on developer-operated servers, sell it, or use it for advertising. Specifically:</p>
+    <ul>
+        <li>We do not collect your name, email, phone number, or any personally identifiable information</li>
+        <li>We do not use advertising SDKs, and we do not analyze or track your usage ourselves</li>
+        <li>Apart from the information described under "Third-Party SDK: Google ML Kit" below, your data is not provided to any third party</li>
+    </ul>
+
+    <h2>Third-Party SDK: Google ML Kit</h2>
+    <p>GoodGYM uses Google ML Kit for on-device pose detection. According to <a href="https://developers.google.com/ml-kit/ios-data-disclosure" style="color:#CCFF00">Google's disclosure</a>, ML Kit collects device information, application information, per-installation identifiers, performance metrics, API configuration, event types and error codes by default, for diagnostics and usage analytics. When your device is online, the app may connect to Google servers (for example, play.googleapis.com). The developer does not receive this information. You can use workouts with your network turned off, in which case these connections do not occur.</p>
+
+    <h2>Apple Health</h2>
+    <p>With your explicit permission and automatic sync enabled, GoodGYM can save the activity type, start time, end time, and duration of completed workouts to Apple Health. GoodGYM does not read body data or write estimated calories. Workout data is handled on your device through Apple HealthKit and is never uploaded to GoodGYM servers. You can change access at any time in Settings or Apple Health.</p>
+
+    <h2>Camera Usage</h2>
+    <p>GoodGYM uses the device camera for real-time pose detection to count your exercise repetitions.</p>
+    <ul>
+        <li>Camera footage is processed locally on your device and is <strong>never uploaded by GoodGYM</strong>; it is not recorded or saved unless you start a workout recording</li>
+        <li>Pose detection runs on-device using Google ML Kit, with no network connection required</li>
+        <li>The camera stops immediately when you close the app</li>
+    </ul>
+
+    <h2>Face Data</h2>
+    <p>GoodGYM does not collect, store, transmit, or share any face data. The app may display a face mask template on the live camera preview based on on-device pose detection results, but this masking is only for local UI display. The app does not identify users, does not save face images, and does not create or retain any face data.</p>
+
+    <h2>Data Storage and iCloud Sync</h2>
+    <p>The following data is stored on your device:</p>
+    <ul>
+        <li>Workout history (daily rep counts and hold times)</li>
+        <li>Workout goal settings</li>
+        <li>Custom exercises</li>
+        <li>Mini-game scores</li>
+        <li>Apple Health automatic sync preference and sync status</li>
+        <li>Language, sound and appearance preferences</li>
+        <li>Workout recordings you choose to save</li>
+    </ul>
+    <p>If your device is signed in to iCloud, GoodGYM uses Apple's CloudKit to sync your workout history, goals, custom exercises and mini-game scores to the <strong>private database of your own iCloud account</strong>, so your data survives reinstalling the app or switching devices and stays the same across your devices. This data is held by Apple under Apple's privacy policy, is accessible only to you, and cannot be viewed by the developer. Preferences and workout recordings are not synced and stay on your device.</p>
+    <p>You can turn off iCloud access for GoodGYM in Settings → [your name] → iCloud, and delete GoodGYM's iCloud data under Manage Storage in the same place. Uninstalling the app deletes the data on your device; to also delete the copy in iCloud, follow the steps above.</p>
+
+    <h2>Purchases and Subscriptions</h2>
+    <p>Pro (monthly or yearly subscription, or lifetime purchase) is bought through the Apple App Store. Payment, renewals and refunds are handled by Apple. GoodGYM never receives your payment details; it only learns from Apple whether you currently have an active membership. You can manage or cancel subscriptions in your App Store account settings.</p>
+
+    <h2>Network Access</h2>
+    <p>Workouts and pose detection <strong>do not require a network connection</strong>, and the app never connects to any developer-operated server. When your device is online, the app may make these connections:</p>
+    <ul>
+        <li>Apple system services, for iCloud sync and App Store purchases</li>
+        <li>Google servers, by Google ML Kit, as described under "Third-Party SDK: Google ML Kit" above</li>
+        <li>Web pages opened by the system when you tap an external link</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>GoodGYM is not directed at children under 13 and does not knowingly collect any information from children.</p>
+
+    <h2>Policy Updates</h2>
+    <p>If we update this privacy policy, the changes will be posted on this page. We encourage you to review this page periodically.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this privacy policy, please contact us via Xiaohongshu (RED).</p>
+
+    <p class="date">Updated: November 7, 2026</p>
+</div>
+
+<div class="footer">
+    <span class="good" style="color:#888">Good</span><span class="gym" style="color:#666">GYM</span>
+</div>
+
+<script>
+function switchLang(lang) {
+    document.getElementById('section-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('section-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+</body>
+</html>
